@@ -35,7 +35,7 @@ router.get(
       });
 
       // Redirect back to frontend
-      const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
+      const clientUrl = process.env.CLIENT_URL || 'https://vibe-lumen-gu082iijp-standoffak286-5615s-projects.vercel.app';
 
       // We pass the token in the URL so that the frontend can choose to store it in localStorage as a fallback.
       return res.redirect(`${clientUrl}/auth-callback?token=${token}`);
