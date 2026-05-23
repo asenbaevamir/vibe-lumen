@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-full select-none bg-vibe-bg text-vibe-dark;
+  }
+}
+
+/* Custom Premium Scrollbar styling */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #586F7C44;
+  border-radius: 99px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #586F7C88;
+}
+
+/* Elegant animations for chat elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Antd design style overrides for seamless dark/light integration */
+.ant-btn-primary {
+  background-color: #04724D !important;
+  border-color: #04724D !important;
+  color: #FFFFFF !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: #035c3e !important;
+  border-color: #035c3e !important;
+}
+
+.ant-input-search-button {
+  background-color: #04724D !important;
+  border-color: #04724D !important;
+}
+
+.ant-input-search-button:hover {
+  background-color: #035c3e !important;
+  border-color: #035c3e !important;
+}
+
+/* Glassmorphism components */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark-glass-panel {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}

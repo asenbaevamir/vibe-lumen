@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# Compilation outputs
+dist/
+
+# Environmental configs (secret keys)
+.env
+.env*.local
