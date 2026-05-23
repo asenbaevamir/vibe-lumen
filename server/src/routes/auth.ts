@@ -36,12 +36,12 @@ router.get(
 
       // Redirect back to frontend
       const clientUrl = process.env.CLIENT_URL || 'http://localhost:5173';
-      
+
       // We pass the token in the URL so that the frontend can choose to store it in localStorage as a fallback.
       return res.redirect(`${clientUrl}/auth-callback?token=${token}`);
     } catch (error) {
       console.error('Google Callback Redirect Error:', error);
-      return res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/auth?error=auth_failed`);
+      return res.redirect(`${process.env.CLIENT_URL || 'https://vibe-lumen-gu082iijp-standoffak286-5615s-projects.vercel.app'}/auth?error=auth_failed`);
     }
   }
 );
