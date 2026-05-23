@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar';
 import ChatWindow from '../components/ChatWindow';
 
 const MainPage: React.FC = () => {
-  const { user, setSocket, setJoinedChats, addMessage, socket } = useAppStore();
+  const { user, setSocket, setJoinedChats, addMessage } = useAppStore();
   const navigate = useNavigate();
 
   // 1. Auth check

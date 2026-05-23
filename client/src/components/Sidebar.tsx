@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, Form, Input, Divider, Typography } from 'antd';
-import { PlusOutlined, LogoutOutlined, MessageFilled, SettingOutlined } from '@ant-design/icons';
+import { PlusOutlined, LogoutOutlined, MessageFilled } from '@ant-design/icons';
 import { useAppStore, Chat } from '../store/useAppStore';
 import API from '../services/api';
 import ChatSearch from './ChatSearch';

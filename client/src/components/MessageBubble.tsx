@@ -1,8 +1,6 @@
 import React from 'react';
-import { Avatar, Typography } from 'antd';
+import { Avatar } from 'antd';
 import { useAppStore, Message } from '../store/useAppStore';
-
-const { Text } = Typography;
 
 interface MessageBubbleProps {
   message: Message;

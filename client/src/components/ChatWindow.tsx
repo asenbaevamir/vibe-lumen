@@ -6,7 +6,7 @@ import API from '../services/api';
 import MessageBubble from './MessageBubble';
 import MessageInput from './MessageInput';
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Text } = Typography;
 
 const ChatWindow: React.FC = () => {
   const { activeChat, messages, setMessages, socket, removeJoinedChat, setActiveChat } = useAppStore();
